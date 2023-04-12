@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+:root{
+    --padding: 0.45rem 0.5rem;
+    --font-size: 1.25rem;
+}
+
+html,
+body{
+    width: 100vw;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+}
+
+form{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+}
+.form-row input[type="text"],
+.form-row select{
+    padding: var(--padding);
+    font-size: var(--font-size);
+}
+
+.form-row button{
+    cursor: pointer;
+    margin: 0.85rem 0;
+    outline: none;
+    border: 0;
+    padding: var(--padding);
+    color: #FFF;
+    background: #222;
+    font-size: 1rem;
+    max-width: 300px;
+}
